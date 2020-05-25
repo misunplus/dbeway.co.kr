@@ -1,0 +1,702 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* banner-------------------------------------------------------------------------------------------- */
+
+#banner{
+    background : #0e3c84;
+    height: 160px;
+}
+
+#banner > div{
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#banner .prev,
+#banner .next,
+#banner .control,
+#banner .close{
+    position: absolute;
+}
+
+#banner .prev{
+    left: 0;
+    top: 42px;
+}
+#banner .next{
+    right: 0;
+    top: 42px;
+}
+#banner .control{
+    left: 0;
+    bottom: 11px;
+    /*control아이콘간의 간격을 없애기 위해서  */
+    font-size: 0;
+}
+#banner .close{
+    right: 0;
+    bottom: 4px;
+}
+
+/* control 간격 조정 
+padding으로 줄시에 클릭시 불편함*/
+#banner .control a{
+    margin: 15px;    
+}
+
+/*close 영역의 글자  */
+#banner .close label{
+    font-size: 11px;
+    color: #fff;
+    /* 오늘하루 열지않기 옆 간격조절을 위해 */
+    padding: 0 22px 0 0;
+}
+
+/* header-------------------------------------------------------------------------------------------- */
+/* 해더 아래쪽 밑줄 */
+#header{
+    height : 99px;
+    background: white;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+/* 가운데 정렬용 */
+#header > div{
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+#header > div > *{
+    float: left;
+}
+
+/* li 가로로 줄세우기 */
+#header #lnb li{
+    float: left;
+    /* 대메뉴 가로  */
+    padding: 0 16px;
+}
+
+#header #lnb li a{
+    display: block;
+    height: 99px;
+    /* 줄간격 */
+    line-height: 99px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 로고옆 여백 */
+#header h1 {
+    padding:0 44px 0 0;
+    
+}
+
+/* 마우스 올렸을때 메뉴아래 선택바 */
+#header #lnb li a:hover{
+    border-bottom: 4px solid #1764dc;
+    /* 선이 아래로 떨어지지 않게 맞추기 */
+    height: 95px;
+    color: #3c91f3;
+    background: url(../index_images/bg_lnb.gif) no-repeat center 87px;
+
+}
+
+#header p{
+    display: block;
+    height: 99px;
+    /* 줄간격 */
+    line-height: 99px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0e3c84;
+    float: left;
+}
+
+#header p span{
+    color: #1764dc;
+}
+
+/* div 세로 가운데 정렬이 안되기 때문에 패딩으로 맞춤 */
+#header>div>div>div{
+    padding: 30px 0 0 11px;
+    /* btn_pop, img 사이의 여백이 삭제 */
+    font-size: 0px;
+    float: left;
+}
+
+#header .btn_pop{
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+    background: url(../index_images/bu_arrow_down.gif) no-repeat 55px center #2cc06b;
+    /* position: relative;
+    top: -15px; */
+    font-size: 13px;
+    color: #fff;
+    line-height: 35px;
+    /* 들여쓰기 */
+    text-indent: -10px;
+}
+
+
+/* btn_pop, img 줄 맞추기 */
+ #header>div>div a{
+    vertical-align: middle;
+    
+} 
+/*이경우로 안맞춰 질 경우 #header .btn_pop 안에서 포지션으로 맞추기*/
+
+#header>div>div{
+    float: right;
+}
+
+
+
+/* visual-------------------------------------------------------------------------------------------- */
+
+#visual{
+    background: url(../index_images/bg_visual.jpg) no-repeat center top;
+}
+
+#visual > div {
+    width: 1200px;
+    /* height: 360px; */
+    margin: 0 auto;
+    /* text-align: center;
+    position: relative; */
+}
+
+/* visual part1-1------------------------------------------------------------------------------------ */
+#visual .copy{
+    padding: 68px 0 0;
+}
+
+#visual .copy > div {
+    float: left;
+    width: 33.33%;
+}
+    /* visual part1-2------------------------------------------------------------------------------------ */
+
+#visual .copy .text1{
+    padding: 127px 0 0 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    /* 글자 자간 */
+    letter-spacing: 14px;
+}
+
+#visual .copy .text1 div{
+    font-size: 33px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+#visual .copy .text1 img{
+    margin: 0 22px 0 8px;
+}
+
+    /* visual part1-3------------------------------------------------------------------------------------ */
+
+#visual .copy .text2{
+    /* 이미지를 다 보기위해서 */
+    width: 401px;
+    height: 264px;
+    background: url(../index_images/bg_circle.png) no-repeat center;
+    font-family: monospace;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    /* 패딩을 위로 줄경우 height값이 변경 344-80=264 264px 수정 */
+    padding: 80px 0 0 0;
+
+}
+
+#visual .copy .text2 div{
+    font-size: 135px;
+    color: #fff;
+    font-family: monospace;
+
+}
+
+    /* visual part1-4------------------------------------------------------------------------------------ */
+
+#visual .copy .text3{
+    float: right;
+    font-family: monospace;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 15px;
+     padding: 109px 37px 0 0;
+     width: 354px;
+}
+
+#visual .copy .text3 div{
+font-family: monospace;   
+font-size: 20px;
+color: #fff;
+text-align: center;
+letter-spacing: 7px;
+
+}
+
+strong { 
+    font-weight: bold;
+}
+
+    /* visual part2-1------------------------------------------------------------------------------------ */
+
+#visual .paging{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0;
+    padding: 27px;
+}
+#visual .paging div{
+    padding: 17px;
+}
+
+    /* visual part2-2------------------------------------------------------------------------------------ */
+
+#visual .paging ul{
+    display: inline-block;
+    font-size: 0;
+}
+#visual .paging li{
+    /* 아이콘을 가로배치 중앙에 하기위해 */
+    display: inline-block;
+    margin: 0 7px;
+}
+
+#visual .paging p{
+    display: inline-block;
+    margin: 0 7px;
+}
+
+/* #visual .paging > a{
+    a요소는 인라인요소 근접요소에 패딩으로 맞추기
+    margin: 27px 0 17px;
+} */
+
+    /* visual part3-1------------------------------------------------------------------------------------ */
+    #visual .bottom {
+        margin-top: -32px;
+}
+
+    /* visual part3-2------------------------------------------------------------------------------------ */
+ 
+    /* float 을주면 높이가 없기때문에 배경이 짤림 */
+    #visual .bottom > .event{
+        float: left;
+        padding: 0 80px;
+        width: 730px;
+        height: 100px;
+        background: rgba(0, 0, 0, 0.3);
+        position: relative;
+    }
+
+    #visual .bottom h2{
+    width: 100px;
+    height: 67px;
+    background: #f13009;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    /* 전체높이에서 33px 빼기  100-33=67px */
+    padding: 33px 0 0 0;
+    /* h요소는 블럭 */
+    float: left;
+}
+#visual .bottom > .event div{
+    position: absolute;
+    left: 38px;
+    top: 14px;
+    background:url(../index_images/bg_line.gif) no-repeat center 33px;
+}
+
+/* a링크 화살표를 아래로 내리기 위해 */
+#visual .bottom > .event div a{
+    display: block;
+    margin:0 0 29px;
+}
+#visual .bottom > .event ul{
+    padding: 26px 0 0 0;
+}
+
+#visual .bottom > .event li{
+    float: left;
+    width: 50%;
+}
+
+#visual .bottom > .event li a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 18px;
+    background: url(../index_images/bu_circle.png) no-repeat left;
+    line-height: 22px;
+}
+
+    /* visual part3-3------------------------------------------------------------------------------------ */
+
+#visual .bottom .weather{
+    float: left;
+    width: 124px;
+    height: 100px;
+    background: #23b963;
+    text-align: center;
+    padding: 0 43px;
+    position: relative;
+}
+
+#visual .bottom .weather >a{
+    position: absolute;
+    top: 50%;
+    margin-top: -6.5px;
+}
+
+#visual .bottom .weather >a.left{
+    left: 19px;
+}
+
+#visual .bottom .weather >a.right{
+    right: 19px;
+}
+
+#visual .bottom .weather h3{
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    margin: 17px 0 9px;
+}
+
+#visual .bottom .weather > div{
+    padding: 0 0 0 68px;
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+}
+
+#visual .bottom .weather > div > div{
+    font-size: 30px;
+}
+#visual .bottom .weather > div img{
+    position: absolute;
+    left: 9px;
+   top: 0;
+}
+
+/* traffic_box-------------------------------------------------------------------------------------------- */
+#traffic_box{
+    background: url(../index_images/bg_traffic.jpg) no-repeat center top;
+}
+
+#traffic_box >div{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#traffic_box >div h2{
+    font-size: 38px;
+    padding: 70px 0 0 0;
+    color: #fefefe;
+    text-align: center;
+}
+
+    /* traffic_box 1-1 -------------------------------------------------------------------------------------------- */
+
+#traffic_box >div .speed{
+    width:250px;
+    height: 230px;
+    margin: 35px auto 145px;
+    background: url(../index_images/bg_circle2.png) no-repeat center top;
+    text-align: center;
+    color: #fff;
+}
+
+#traffic_box >div .speed div.t1{
+    padding: 72px 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+    /* 자간 */
+    letter-spacing: 10px;
+    /* 들여쓰기 */
+    text-indent: 6px;
+}
+
+#traffic_box >div .speed div.t2{
+    padding: 0 0 17px;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 73%;
+}
+#traffic_box >div .speed div.t3{
+    font-size: 11;
+    font-weight: bold;
+}
+
+    /* traffic_box 1-2 -------------------------------------------------------------------------------------------- */
+#traffic_box >div .right {
+    position: absolute;
+    top: 240px;
+    right: 50px;
+}
+
+#traffic_box >div .left {
+    position: absolute;
+    left: 50px;
+    top: 246px;
+}
+
+#traffic_box >div .left li{
+    float: left;
+    padding: 0 3px 0 0;
+}
+
+#traffic_box >div .left a{
+    display: block;
+    width: 105px;
+    height: 47px;
+    background: url(../index_images/bg_btn_tab.png) no-repeat;
+    text-align: center;
+    line-height: 47px;
+    color: #fff;
+}
+
+#traffic_box >div .left a:hover,
+#traffic_box >div .left li.on a{
+    background-position: right top;
+}
+
+
+    /* traffic_box 2-1 -------------------------------------------------------------------------------------------- */
+#traffic_box >div .graph{
+    margin: 0 auto;
+    width: 1052px;
+}
+#traffic_box >div .graph li{
+    float: left;
+    padding: 0 0 0 80px;
+    background: url(../index_images/bg_arrow.png)no-repeat 23px center;
+    width: 45px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+
+}
+#traffic_box >div .graph li>div{
+    position: absolute;
+    top: -197px;
+    right: -63px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#traffic_box >div .graph li:first-child{
+    background: none;
+    padding-left: 0;;
+}
+
+#traffic_box >div .graph li:first-child div{
+    right: -33px;
+}
+
+#traffic_box >div .graph ul{
+    padding: 98px 0 0 0;
+}
+
+#traffic_box >div .graph li>div strong{
+    font-weight: bold;
+    display: block;
+    font-size: 25px;
+    position: relative;
+}
+
+#traffic_box >div .graph li>div strong img{
+    display : block;
+    margin: 0 auto;
+}
+
+#traffic_box >div .graph li>div strong img+span{
+    display: none;
+    position: absolute;
+    font-size: 11px;
+    color: #fff;
+    background: #0e3c84;
+    width: 215px;
+    padding: 8px;
+    left: 29px;
+    top: -22px;
+}
+
+#traffic_box >div .graph li>div strong img:hover+span{
+    display: block;
+}
+
+#traffic_box >div .next{
+    padding: 37px 0 28px;
+    text-align: center;
+}
+
+/* safe-------------------------------------------------------------------------------------------- */
+
+#safe{
+    background: url(../index_images/bg_visual2.gif)no-repeat center top;
+}
+
+#safe > div{
+    position: relative;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+#safe > div > h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 70px 0 36px 0;
+    color: #123977;
+}
+
+#safe .list{
+    border: 1px solid #ddd;
+}
+
+#safe .list li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    border-left: 1px solid #ddd;
+    /* 겹친 border선 정리 */
+    margin-left: -1px;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#safe .list li h3{
+    padding : 140px 0 16px;
+    font-size: 19px;
+    font-weight: bold;
+    background: url(../index_images/bg_line2.gif) no-repeat center bottom;
+    color: #333;
+}
+
+#safe .list li div{
+    padding: 19px 0 0;
+    height: 85px;
+    font-size: 13px;
+    color: #777;
+    line-height: 18px;
+}
+
+#safe .list li.bg1{background-image:url(../index_images/bg_ico_off1.png);}
+#safe .list li.bg2{background-image:url(../index_images/bg_ico_off2.png);}
+#safe .list li.bg3{background-image:url(../index_images/bg_ico_off3.png);}
+#safe .list li.bg4{background-image:url(../index_images/bg_ico_off4.png);}
+
+#safe .list li a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* 여러 요소(태그)가 겹칠때 우선순위 설정태그 z-index */
+    z-index: 2;
+    /* 글자 안보이게 가리기 */
+    color: transparent;
+}
+
+#safe .list li:hover{
+    background-color: #1660d4;
+}
+
+#safe .list li:hover h3,
+#safe .list li:hover div{
+    color: #fff;
+}
+
+#safe .list li.bg1:hover{background-image:url(../index_images/bg_ico_on1.png);}
+#safe .list li.bg2:hover{background-image:url(../index_images/bg_ico_on2.png);}
+#safe .list li.bg3:hover{background-image:url(../index_images/bg_ico_on3.png);}
+#safe .list li.bg4:hover{background-image:url(../index_images/bg_ico_on4.png);}
+
+
+#safe .news{
+    padding: 40px 0 0 0;
+}
+
+#safe .news>div{
+    float: right;
+    width: 530px;
+    position: relative;
+}
+
+#safe .news>div:first-child{
+    float: left;
+}
+
+#safe .news h3{
+    color: #333;
+    font-size: 22px;
+    padding: 0 0 20px 0;
+}
+
+#safe .news li{
+    height: 74px;
+    padding: 0 0 0 100px;
+    position: relative;
+}
+#safe .news li a{
+    height: 74px;
+    line-height: 74px;
+    border-bottom: 1px solid #ececec;
+    display: block;
+}
+#safe .news li a img{
+    position: relative;
+    top: 2px
+}
+
+#safe .news li span{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 74px;
+        border-bottom: 1px solid #ececec;
+        width :70px;
+        text-align : center;
+        font-size : 13px;
+        color :#333
+}
+
+#safe .news li span strong{
+    /* strong 인라인요소 */
+    display : block;
+    padding: 20px 0 0;
+    font-size : 21px;
+    color : #1e62cc;
+}
+
+#safe .news>div p{
+    position : absolute;
+    top: 5px;
+    right : 0;
+}
+
+#safe .next{
+    padding: 35px 0 20px 0;
+    text-align: center;
+}
